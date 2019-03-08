@@ -3,5 +3,5 @@ def prime?(integer)
   true
   if integer == -i
   false
+  end
 end
-  
