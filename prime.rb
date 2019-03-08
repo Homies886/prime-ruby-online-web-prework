@@ -1,7 +1,4 @@
 def prime?(integer)
-  (2..integer - 1).each {|x| return false if (integer % x) == 0 }
-  true
-  if integer == 1
-  false
-  end
+   prime_number = (2..(integer - 1)).to_a
+   (prime_number.any? {|divisor| integer % divisor == 0} || integer <= 0 || integer == 1) ? false : true
 end
